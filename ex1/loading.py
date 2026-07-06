@@ -18,7 +18,7 @@ def manage_dependencies(dependencies: dict[str, str]) -> bool:
             return_value = False
         else:
             print(
-                f"[OK] {item} {getattr(dependency, "__version__", "unknown")}"
+                f"[OK] {item} {getattr(dependency, '__version__', 'unknown')}"
                 f" - {message}"
                 )
     return return_value
